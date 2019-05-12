@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<style>
+  p {
+    border:1px solid rgb(180, 180, 180);
+    padding:10px;
+  }
+</style>
+
+<body>
+  <p style="width: 200px;">
+    <b><font size="3">Первое число:</font></b>
+    <input style="margin-bottom:10px" id="num1"/>
+    <b><font size="3">Второе число:</font></b>
+    <input style="margin-bottom:10px" id="num2"/>
+    <input style="margin-top:10px" type="button" value="Сложить" onclick="sum()"/>
+    <script>
+      function sum() {
+        var num1=document.getElementById('num1').value;
+        var num2=document.getElementById('num2').value;
+        var sum0=+num1 + +num2;
+        alert(+sum0.toFixed(10));
+        }
+    </script>    
+  </p>
+</body>
+
+</html>
